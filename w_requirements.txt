@@ -1,0 +1,6 @@
+docutils==0.14
+kivy.deps.angle==0.1.7
+kivy.deps.sdl2==0.1.18
+Pygments==2.2.0
+pypiwin32==223
+pywin32==223
