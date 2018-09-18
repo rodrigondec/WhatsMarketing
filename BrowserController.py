@@ -51,3 +51,7 @@ class BrowserController:
         elem.send_keys("pycon")
         elem.send_keys(Keys.RETURN)
         driver.close()
+
+    def send_message(self, num=5584998184097, msg='ola'):
+        self.driver.get('https://api.whatsapp.com/send?phone={}&text={}'.format(num, msg))
+
