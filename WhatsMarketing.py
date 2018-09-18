@@ -1,8 +1,8 @@
 from kivy.app import App
-from kivy.uix.boxlayout import BoxLayout
+from kivy.uix.gridlayout import GridLayout
 
 
-class WhatsMarketing(BoxLayout):
+class WhatsMarketing(GridLayout):
     pass
 
 
