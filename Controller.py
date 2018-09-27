@@ -38,3 +38,5 @@ with open(args.csv, newline='', encoding='utf-8') as file:
 with open('resultados.csv', 'w+') as file:
     for status in Status.list:
         file.write(status.to_csv()+'\n')
+
+sys.exit()
