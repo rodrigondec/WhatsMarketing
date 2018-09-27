@@ -41,14 +41,15 @@ class BrowserController:
         elem.send_keys(Keys.RETURN)
         driver.close()
 
-    def send_message(self, num=5584998184097, msg='ola123'):
+    def send_message(self, num, msg):
         self.driver.get('https://api.whatsapp.com/send?phone={}&text={}'.format(num, msg))
         self.driver.find_element_by_id('action-button').click()
         delay = 10  # seconds
         try:
             WebDriverWait(self.driver, delay).until(expected_conditions.presence_of_element_located((By.CLASS_NAME, '_35EW6')))
-            print("Page is ready!")
+            # print("Page is ready!")
             sleep(1)
             self.driver.find_element_by_class_name('_35EW6').click()
+            sleep(1)
         except TimeoutException:
             print("Loading took too much time!")
