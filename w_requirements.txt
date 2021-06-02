@@ -21,4 +21,4 @@ pywin32==223
 pywin32-ctypes==0.2.0
 requests==2.19.1
 selenium==3.14.0
-urllib3==1.23
+urllib3==1.26.5
