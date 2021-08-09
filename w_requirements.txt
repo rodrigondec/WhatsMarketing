@@ -17,7 +17,7 @@ pygame==1.9.4
 Pygments==2.2.0
 PyInstaller==3.4
 pypiwin32==223
-pywin32==223
+pywin32==301
 pywin32-ctypes==0.2.0
 requests==2.19.1
 selenium==3.14.0
